@@ -1,0 +1,54 @@
+{
+  "maps" : [
+    {
+      "id" : "12345",
+      "path" : [
+        {
+          "target" : "customActor",
+          "handler" : "handle"
+        },
+        {
+          "target" : "printActor",
+          "handler" : "handle"
+        },
+        {
+          "target": "repeater",
+          "handler": "repeatTargets"
+        }
+      ]
+    }
+  ],
+  "actors": [
+    {
+      "id": "it.sevenbits.CustomActor",
+      "name": "customActor",
+      "parameters": "some parameters"
+    },
+    {
+      "id": "it.sevenbits.PrintActor",
+      "name": "printActor"
+    },
+    {
+      "id": "info.smart_tools.smartactors.core.actors.service.Repeater",
+      "name": "repeater"
+    }
+  ],
+  "transformationRules": [
+    {
+      "name": "amazingRule",
+      "class": "it.sevenbits.CustomTransformationRule"
+    },
+    {
+      "name": "concatStringRule",
+      "class": "info.smart_tools.smartactors.core.transformation.rules.ConcatStringsRule",
+      "delimiter": ",",
+      "out": "out"
+    }
+  ],
+  "validationRules": [
+    {
+      "name": "validationRule1",
+      "class": "it.sevenbits.CustomValidationRule"
+    }
+  ]
+}

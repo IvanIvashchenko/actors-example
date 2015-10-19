@@ -1,0 +1,37 @@
+{
+  "repo": {
+    "local": {
+      "conf": "config",
+      "folder": ".",
+      "lib": "lib"
+    },
+    "remote": {
+      "conf": "http://192.168.0.4:2663/",
+      "folder": "http://192.168.0.4:1589/",
+      "lib": "http://192.168.0.4:3453/",
+      "username": "",
+      "password": ""
+    }
+  },
+  "init": {
+    "port": 8080,
+    "libs": [
+      {"name":"student-actors",
+        "version": "1.0"},
+      {"name":"mega-actors",
+        "version": "10.24"},
+      {"name":"giga-actors",
+        "version": "1.02.40"},
+      {"name":"tera-actors",
+        "version": "2.3.3"}
+    ]
+  },
+  "fileName": "./configuration.json",
+  "endpoints": [
+    {
+      "protocol": "http",
+      "port": 9909
+    }
+  ],
+  "threadCount": 2
+}

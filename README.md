@@ -1,6 +1,6 @@
 # actors-example
 
-* move configuration.json from this folder to actors root folder
+* move configuration.json from this folder to folder with jars
 * move application.json from this folder to actors/src/main/resources
 
 * outside message example:
